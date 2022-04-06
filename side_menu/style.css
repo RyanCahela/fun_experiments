@@ -1,0 +1,63 @@
+:root {
+  /* Colors */
+  --clr-green: #2ecc71;
+  --clr-yellow: #f1c40f;
+  --clr-white: #ecf0f1;
+  --clr-black: #2c3e50;
+  /* Color Intentions */
+  --clr-primary-accent: var(--clr-green);
+  --clr-primary: var(--clr-black);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  z-index: 10;
+  height: 50px;
+  justify-content: space-between;
+  width: 100%;
+  right: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  right: -300px;
+  bottom: 0;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  transition: right 0.3s ease-in;
+}
+
+.sidebar.active {
+  right: 0px;
+}
+
+.container {
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease-in;
+}
+
+.container.active {
+  position: relative;
+  left: -300px;
+}
+
+.main {
+  padding-top: 50px;
+}

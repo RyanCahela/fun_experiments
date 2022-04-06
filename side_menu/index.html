@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Side Menu Experiment</title>
+  </head>
+  <body>
+    <div class="container js-container">
+      <header class="header">
+        <span style="font-size: 3rem">Header</span>
+        <button class="js-btn-toggle-sidebar">Open</button>
+      </header>
+      <div class="sidebar js-sidebar">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>Another One</li>
+          <li>Footer</li>
+        </ul>
+      </div>
+      <main class="main">
+        <h1>This is a Hero Section</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          quasi illum reiciendis eveniet, modi sint culpa quis iure, laboriosam
+          quam doloribus assumenda quas dolorem, pariatur repellat incidunt
+          blanditiis ad. Aliquid.
+        </p>
+      </main>
+      <footer>This is the footer</footer>
+    </div>
+    <script>
+      //cache button, container, sidebar
+      const btnToggleSidebar = document.querySelector(".js-btn-toggle-sidebar");
+      const divContainer = document.querySelector(".js-container");
+      const divSidebar = document.querySelector(".js-sidebar");
+
+      btnToggleSidebar.addEventListener("click", (e) => {
+        divContainer.classList.toggle("active");
+        divSidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
