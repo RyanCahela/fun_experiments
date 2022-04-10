@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  background-image: url("https://picsum.photos/400/300");
+  mix-blend-mode: screen;
+  background-color: green;
+  --webkit-background-clip: text;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 10vw;
+  display: inline-block;
+  background-blend-mode: screen;
+  color: black;
+  z-index: 5;
+}

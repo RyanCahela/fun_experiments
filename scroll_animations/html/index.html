@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="sal.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Complete Responsive Website Design</title>
+</head>
+<body>
+	<div class="wrapper">
+		
+		<!--  header -->
+		<header>
+			<a href="#" class="logo">Brand Name</a>
+			<div class="toggle" onclick="toggleClassName();"></div>
+		</header>
+
+		<!--  Sidebar -->
+		<div class="sidebar">
+			<ul>
+				<li><a href="#home" onclick="toggleClassName();">Home</a></li>
+				<li><a href="#about" onclick="toggleClassName();">About</a></li>
+				<li><a href="#services" onclick="toggleClassName();">Services</a></li>
+				<li><a href="#client" onclick="toggleClassName();">Clients</a></li>
+				<li><a href="#testmonials" onclick="toggleClassName();">Testimonials</a></li>
+				<li><a href="#team" onclick="toggleClassName();">Team</a></li>
+				<li><a href="#contact" onclick="toggleClassName();">Contact</a></li>
+			</ul>
+		</div>
+
+		<!--  banner -->
+		<div class="banner" id="home">
+			<img src="images/bg.jpg">
+			<div class="content" data-sal="slide-left" data-sal-duration="500">
+				<h2>Sucess By Design</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi.</p>
+			</div>
+		</div>
+
+		<!--  about -->
+		<section class="about" id="about">
+			<div class="contentBx" data-sal="slide-right" data-sal-duration="500">
+				<h2 class="heading">About Us</h2>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident</p>
+			</div>
+			<div class="imgBx" data-sal="slide-left" data-sal-duration="500"></div>
+		</section>
+
+
+		<!--  service -->
+		<section class="services" id="services">
+			<h2 class="heading" data-sal="slide-right" data-sal-duration="500">Our Services</h2>
+			<p class="text" data-sal="slide-left" data-sal-duration="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<div class="container">
+				<div class="serviceBx" data-sal="slide-right" data-sal-duration="500">
+					<div>
+						<img src="images/icon1.png">
+						<h2>Design</h2>
+					</div>
+				</div>
+				<div class="serviceBx" data-sal="slide-up" data-sal-duration="500">
+					<div>
+						<img src="images/icon2.png">
+						<h2>Development</h2>
+					</div>
+				</div>
+				<div class="serviceBx" data-sal="slide-left" data-sal-duration="500">
+					<div>
+						<img src="images/icon3.png">
+						<h2>Branding</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--  technologies -->
+		<section class="technolgy">
+			<div class="contentBx" data-sal="slide-right" data-sal-duration="500">
+				<h2 class="heading">We use cutting edge technology</h2>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="imgBx" data-sal="slide-left" data-sal-duration="500">
+				<img src="images/tech.png">
+			</div>
+		</section>
+		<!--  clients -->
+		<section class="client" id="client">
+			<h2 class="heading" data-sal="slide-right" data-sal-duration="500">Our Clients</h2>
+			<p class="text" data-sal="slide-left" data-sal-duration="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<div class="imgBx">
+				<img src="images/brand1.png">
+				<img src="images/brand2.png">
+				<img src="images/brand3.png">
+				<img src="images/brand4.png">
+			</div>
+		</section>
+
+		<!--  testimonials -->
+		<section class="testimonials" id="testmonials">
+			<h2 class="heading">What our client says</h2>
+			<div class="container">
+				<div class="contentBx" data-sal="slide-right" data-sal-duration="500">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p><br>
+						<h3>Someone Famouse</h3>
+					</div>
+				</div>
+				<div class="contentBx" data-sal="slide-left" data-sal-duration="500">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p><br>
+						<h3>Someone Famouse</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--  Team -->
+		<section class="team" id="team">
+			<h2 class="heading" data-sal="slide-left" data-sal-duration="500">Our Team</h2>
+			<p class="text" data-sal="slide-right" data-sal-duration="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<div class="container">
+				<div class="teamBx">
+					<div class="box">
+						<div class="imgBx">
+							<img src="images/1.jpg">
+						</div>
+						<div class="content">
+							<h2>Someone Famous<br><span>CEO & Founder</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="teamBx">
+					<div class="box">
+						<div class="imgBx">
+							<img src="images/2.jpg">
+						</div>
+						<div class="content">
+							<h2>Someone Famous<br><span>CEO & Founder</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="teamBx">
+					<div class="box">
+						<div class="imgBx">
+							<img src="images/3.jpg">
+						</div>
+						<div class="content">
+							<h2>Someone Famous<br><span>CEO & Founder</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="teamBx">
+					<div class="box">
+						<div class="imgBx">
+							<img src="images/4.jpg">
+						</div>
+						<div class="content">
+							<h2>Someone Famous<br><span>CEO & Founder</span></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--  contact -->
+		<section class="contact">
+			<div>
+				<h2 class="heading" data-sal="slide-left" data-sal-duration="500">Contact Us</h2>
+				<p class="text" data-sal="slide-right" data-sal-duration="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+		</section>
+
+		<section class="about" id="contact">
+			<div class="contentBx redBg">
+				<div class="form" data-sal="slide-right" data-sal-duration="500">
+					<div class="inputBx">
+						<input type="text" name="" placeholder="Full Name">
+					</div>
+					<div class="inputBx">
+						<input type="text" name="" placeholder="Email Address">
+					</div>
+					<div class="inputBx">
+						<input type="text" name="" placeholder="Mobile No.">
+					</div>
+					<div class="inputBx">
+						<textarea placeholder="Write your message here..."></textarea>
+					</div>
+					<div class="inputBx">
+						<input type="submit" value="Send" name="">
+					</div>
+				</div>
+			</div>
+			<div class="imgBx2"></div>
+		</section>
+
+		<!--  Footer -->
+		<section class="footer">
+			<p class="text">Design & Developed By Muhammad Irshad</p>
+			<ul>
+				<p class="text">Follow us on : </p>
+				<li><a href="#"><img src="images/facebook.png"></a></li>
+				<li><a href="#"><img src="images/twitter.png"></a></li>
+				<li><a href="#"><img src="images/linkedin.png"></a></li>
+			</ul>
+		</section>
+
+	</div>
+
+
+	<script type="text/javascript" src="sal.js"></script>
+	<script type="text/javascript">
+
+		sal({
+		  once: false,
+		});
+
+		function toggleClassName(){
+			var sidebar = document.querySelector('.sidebar');
+			var wrapper = document.querySelector('.wrapper');
+			var toggle = document.querySelector('.toggle');
+			sidebar.classList.toggle('active')
+			wrapper.classList.toggle('active')
+			toggle.classList.toggle('active')
+		}
+
+		window.addEventListener('scroll', function(){
+			var header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0 )
+		})
+	</script>
+</body>
+</html>
