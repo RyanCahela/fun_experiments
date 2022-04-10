@@ -30,6 +30,10 @@
     setTagList,
     createTag
   };
+
+  APP.events = {
+    stateChange: new CustomEvent("stateChange")
+  }
   window.APP = APP;
 })(window);
 
@@ -58,7 +62,27 @@ renderTagList(window.APP.tag.tagList);
 (function listenForEnterPress(window) {
 })(window);
 
+//listen for tag remove button click
+(function listenForTagRemoveButtonClick(window) {
+  const APP = window.APP || {};
 
+  const {setTagList, tagList} = APP.tag;
+  const buttonList = document.querySelectorAll(".js-tag__remove-button");
+
+  buttonList.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const newTagList = tagList.filter((tag) => {
+        return Number(tag.id) !== Number(e.target.dataset.id);
+      });
+
+
+      setTagList(newTagList);
+    });
+  });
+
+
+  window.APP = APP;
+})(window);
 //on enter press create tag from stored value in memory
 
 //add tag to list
@@ -79,16 +103,17 @@ function useState(initialState) {
 
   function setState(newState) {
     state.value = newState;
+    renderTagList(state.value);
   }
 
   return [state.value, setState];
 };
 
-function createTag(tagText) {
+function createTag(tag) {
   return (`
     <span class="tag js-tag">
-      <span class="tag__text">${tagText}</span>
-      <button class="tag__remove-button js-tag__remove-button">X</button>
+      <span class="tag__text">${tag.text}</span>
+      <button class="tag__remove-button js-tag__remove-button" data-id=${tag.id}>X</button>
     </span>
   `)
 }
@@ -97,7 +122,7 @@ function renderTagList(tagList) {
   //todo cache input-container in APP
   const inputContainer = document.querySelector(".js-input-container");
   const elementList = tagList.map((tag) => {
-    return createTag(tag.text);
+    return createTag(tag);
   });
 
   //add input at the end
