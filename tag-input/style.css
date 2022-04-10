@@ -1,9 +1,63 @@
+:root {
+  --clr-red: #AA7070;
+  
+
+  --clr-white: whitesmoke;
+  --clr-black: #333;
+  --clr-primary-base: darkslategray;
+  --clr-primary-accent: var(--clr-red); 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: var(--clr-primary-base); 
+  color: var(--clr-white);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: darkslategray;
-  color: whitesmoke;
+  margin: 0;
 }
 
 h1 {
   font-size: 3rem;
+}
+
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.input-container {
+  background: var(--clr-white); 
+  color: var(--clr-black);
+  padding-inline: 2rem;
+  padding-block: 2.5rem; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tag-input {
+  font-size: 1.5rem;
+}
+
+.tag {
+  background-color: var(--clr-primary-accent);
+  color: var(--clr-black);
+  display: inline-block;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.tag__remove-button {
+  background-color: transparent;
+  border: 1px solid var(--clr-black);
+  font-size: 0.75rem;
+}
+
+.tag__remove-button:hover {
+  cursor: pointer;
 }
